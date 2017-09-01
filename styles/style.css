@@ -8,8 +8,15 @@ body,
 .cover {
     height: 100%;
     width: 100%;
+}
+
+.cover{
     position: relative;
     overflow: hidden;
+    background:url("../images/moon and stars.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
 }
 
 body {
@@ -21,11 +28,10 @@ body {
     position: absolute;
     width: 100%;
     min-height: 100%;
-    background: #afceff;
 }
 
 .wave {
-    background: #02398e;
+    background: rgba(98, 128, 173, 0.71);
     display: inline-block;
     height: 10%;
     width: 8px;
@@ -39,7 +45,7 @@ body {
 }
 
 .ocean:nth-child(2) .wave {
-    background: black;
+    background: rgba(25, 59, 111, 0.77);
     z-index: 30;
 }
 
@@ -57,14 +63,14 @@ body {
 
 .ship {
     position: absolute;
-    height: 512px;
-    right: 3%;
-    bottom: 0;
-    animation-name: shipwave;
+    height: 550px;
+    right: 2%;
+    bottom: 3%;
+    /* animation-name: shipwave; */
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    transform: rotate(5deg);
+    /* transform: rotate(5deg); */
 }
 
 @keyframes shipwave {
@@ -93,4 +99,29 @@ body {
 .ship img {
     display: block;
     height: inherit;
+    /* filter:invert(100%); */
+}
+
+.cover-text{
+    font-family: "Helvetica";
+    font-size: 100px;
+    color:rgba(225, 225, 225, 0.58);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#timer{
+    font-family: monospace;
+    font-size:50px;
+    color:#121519;
+    text-transform: uppercase;
+    display: block;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 20%;
+    position: absolute;
+    padding: 10px;
+    background: #91A2A9;
+    max-width: 40%;
 }
