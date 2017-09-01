@@ -25,3 +25,18 @@ for (var i = 0; i < waveCount; i++) {
 }
 
 ocean[1].appendChild(docFrag2);
+
+var countDownDate = new Date("Oct 13, 2017 08:00:00").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDownDate - now;
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+document.getElementById("timer").innerHTML ="<span class='timer-text'> " days + "</span><span class='timer-text'>  " + hours + "</span><span class='timer-text'>"+ minutes + "</span><span class='timer-text'>" + seconds + "</span> ";
+if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+ }
+}, 1000);
