@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-
 * {
     margin: 0;
     padding: 0;
+    font-family: Roboto;
 }
 
 html,
@@ -11,7 +9,7 @@ body,
 .cover {
     height: 100%;
     width: 100%;
-    box-shadow: 0 5px 30px 10px rgba(25, 59, 111, 0.3);
+    /* box-shadow: 0 5px 30px 10px rgba(25, 59, 111, 0.3); */
 }
 
 .cover{
@@ -19,7 +17,7 @@ body,
     overflow: hidden;
     background:url("../images/moon and stars.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: left;
 }
 
@@ -116,33 +114,79 @@ body {
 }
 
 #timer{
-    font-family: Roboto;
-    font-size:50px;
-    color:rgb(145, 162, 169);
+    font-family: "Roboto Slab";
+    font-size:60px;
+    color:rgb(82, 83, 84);
     display: block;
-    top:45%;
-    left: 10%;
+    top:25%;
+    left: 15%;
     position: absolute;
     padding: 10px;
-    background: rgba(18, 21, 25, 0.57);
-    max-width: 40%;
+    max-width: 30%;
 }
 
 .content{
-    display: flex;
-    padding:50px;
+    padding:40px;
     padding-top: 70px;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
+   
+    background: #262626;
 }
 
 .sec {
     display:block;
-    background-color: #8C40CD;
+    background-color: rgba(69, 77, 79, 0.40);
     padding: 40px;  
     height: 250px;
     width:250px;
-    border-radius: 0.5;  
+    border-radius: 10.5px;  
+    margin:10px;
+}
 
+.timer-text{
+    display: inline-block;
+    background:rgba(247, 247, 247, 0.84);
+    margin:10px;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.timer-text:nth-child(1)::after{
+    content: 'DAYS';
+    font-size:20px;
+}
+
+.timer-text:nth-child(2)::after{
+    content: 'HOURS';
+    font-size:20px;
+}
+
+.timer-text:nth-child(3)::after{
+    content: "MINUTES";
+    font-size:20px;
+}
+
+.timer-text:nth-child(4)::after{
+    content: "SECONDS";
+    font-size:20px;
+}
+
+.head{
+    color:#FF3300;    
+    font-family: "Roboto Slab";
+    font-size:60px;
+    text-align: center;
+}
+
+.sec span{
+    font-family: "Roboto Slab";
+    color:#099FFF;
+    font-size:20px;  
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin-top:10px;
 }
