@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +11,7 @@ body,
 .cover {
     height: 100%;
     width: 100%;
+    box-shadow: 0 5px 30px 10px rgba(25, 59, 111, 0.3);
 }
 
 .cover{
@@ -112,16 +116,33 @@ body {
 }
 
 #timer{
-    font-family: monospace;
+    font-family: Roboto;
     font-size:50px;
-    color:#121519;
-    text-transform: uppercase;
+    color:rgb(145, 162, 169);
     display: block;
-    transform: translate(-50%,-50%);
-    top:50%;
-    left: 20%;
+    top:45%;
+    left: 10%;
     position: absolute;
     padding: 10px;
-    background: #91A2A9;
+    background: rgba(18, 21, 25, 0.57);
     max-width: 40%;
+}
+
+.content{
+    display: flex;
+    padding:50px;
+    padding-top: 70px;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sec {
+    display:block;
+    background-color: #8C40CD;
+    padding: 40px;  
+    height: 250px;
+    width:250px;
+    border-radius: 0.5;  
+
 }
