@@ -126,18 +126,17 @@ body {
 }
 
 .content{
-    padding:40px;
     padding-top: 70px;
    
-    background: #262626;
+    background: #000000;
 }
 
 .sec {
     display:block;
-    background-color: rgba(69, 77, 79, 0.40);
+    background-color: rgba(69, 77, 79, 0.22);
     padding: 40px;  
-    height: 250px;
-    width:250px;
+    height: 225px;
+    width:225px;
     border-radius: 10.5px;  
     margin:10px;
 }
@@ -171,15 +170,15 @@ body {
 }
 
 .head{
-    color:#FF3300;    
-    font-family: "Roboto Slab";
+    color:#0f0;    
+    font-family: 'Roboto Slab';
     font-size:60px;
     text-align: center;
 }
 
 .sec span{
     font-family: "Roboto Slab";
-    color:#099FFF;
+    color:#0f0;
     font-size:20px;  
 }
 
