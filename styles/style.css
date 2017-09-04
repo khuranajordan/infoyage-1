@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: "Open Sans";
 }
 
 html,
@@ -98,7 +98,7 @@ body {
     }
 }
 
- img {
+.ship img {
     display: block;
     height: inherit;
     /* filter:invert(100%); */
@@ -119,28 +119,29 @@ body {
     color:rgb(82, 83, 84);
     display: block;
     top:25%;
-    left: 15%;
+    left: 10%;
     position: absolute;
     padding: 10px;
     max-width: 30%;
+    font-weight: bold;
 }
 
 .content{
-    padding-top: 70px;
-   
+    padding: 20px 60px 0 60px;
     background: #000000;
 }
 
 .sec {
     display:block;
     background-color: rgba(69, 77, 79, 0.22);
-    padding: 20px;  
-    height: 225px;
-    width:225px;
+    /* padding: 20px;   */
+    height: 275px;
+    width:325px;
     border-radius: 10.5px;  
-    margin:10px;
     overflow:hidden;
     position: relative;
+    margin-bottom:40px;
+    text-align: center;
 }
 
 .timer-text{
@@ -152,39 +153,41 @@ body {
 }
 
 .timer-text:nth-child(1)::after{
-    content: 'DAYS';
+    content: ' DAYS';
     font-size:20px;
 }
 
 .timer-text:nth-child(2)::after{
-    content: 'HOURS';
+    content: ' HOURS';
     font-size:20px;
 }
 
 .timer-text:nth-child(3)::after{
-    content: "MINUTES";
+    content: " MINUTES";
     font-size:20px;
 }
 
 .timer-text:nth-child(4)::after{
-    content: "SECONDS";
+    content: " SECONDS";
     font-size:20px;
 }
 
 .head{
     color:#0f0;    
     font-family: 'Roboto Slab';
-    font-size:60px;
+    font-size:90px;
     text-align: center;
+    padding-bottom:20px;
 }
 
 .sec span{
-    font-family: "Roboto Slab";
-    color:#0f0;
-    font-size:20px;  
+    /* font-family: "Roboto Slab"; */
+    color:rgba(0, 255, 0, 0.58);
+    font-size:23px;  
     display: block;
     padding:10px;
     text-align:center;
+    font-weight: bold;
 }
 
 .flex-box{
@@ -196,9 +199,8 @@ body {
 }
 
 .sec img{
-    position:absolute;
-    transform: translate(-50%,-50%);
-    top:35%;
-    left:50%;
+    display: block;
+    height:80%;
     filter:grayscale(0.8);
+    min-width:100%;
 }
