@@ -15,7 +15,7 @@ body,
 .cover{
     position: relative;
     overflow: hidden;
-    background:url("../images/moon and stars.jpg");
+    background:url("../images/Stars.png");
     background-size: cover;
     /* background-attachment: fixed; */
     background-position: left;
@@ -66,6 +66,7 @@ body {
 .ship {
     position: absolute;
     height: 550px;
+    width:550px;
     right: 2%;
     bottom: 3%;
     /* animation-name: shipwave; */
@@ -158,17 +159,17 @@ body {
 }
 
 .timer-text:nth-child(2)::after{
-    content: ' HOURS';
+    content: ' HRS';
     font-size:20px;
 }
 
 .timer-text:nth-child(3)::after{
-    content: " MINUTES";
+    content: " MIN";
     font-size:20px;
 }
 
 .timer-text:nth-child(4)::after{
-    content: " SECONDS";
+    content: " SEC";
     font-size:20px;
 }
 
@@ -203,4 +204,8 @@ body {
     height:80%;
     filter:grayscale(0.8);
     min-width:100%;
+}
+
+.ship img:nth-child(2){
+    z-index: 20;
 }
