@@ -1,7 +1,7 @@
-body, html{
-     height: 100%;
+body{
+    height: 100%;
  	background-repeat: no-repeat;
- 	background-color: #d3d3d3;
+ 	background-color: #cccccc !important;
  	font-family: 'Oxygen', sans-serif;
     color: white;
 }
@@ -12,13 +12,13 @@ body, html{
 
 h1.title { 
 	font-size: 50px;
-	font-family: 'Passion One', cursive; 
+	font-family: 'Oswald', sans-serif;
 	font-weight: 400; 
 }
 
 hr{
 	width: 10%;
-	color: #fff;
+	color: ;
 }
 
 .form-group{
@@ -56,11 +56,3 @@ input::-webkit-input-placeholder {
 
 }
 
-.login-button{
-	margin-top: 5px;
-}
-
-.login-register{
-	font-size: 11px;
-	text-align: center;
-}
